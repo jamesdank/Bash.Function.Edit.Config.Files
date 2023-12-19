@@ -35,17 +35,17 @@ function config () {
         1) 
         sudo $editor ~/.bashrc ;;
         
-	      2) 
-	      sudo $editor /etc/fstab ;;
+	2) 
+	sudo $editor /etc/fstab ;;
 
         3) 
-	      sudo $editor /etc/apt/sources.list ;;
+	sudo $editor /etc/apt/sources.list ;;
 
         4) 
-	      EDITOR=$editor crontab -e ;;
+	EDITOR=$editor crontab -e ;;
 
         5) 
-	      EDITOR=$editor crontab -u root -e ;;
+	EDITOR=$editor crontab -u root -e ;;
 	     
         0) 
         exit 0 ;;
