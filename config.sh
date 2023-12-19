@@ -45,7 +45,7 @@ function config () {
 	EDITOR=$editor crontab -e ;;
 
         5) 
-	EDITOR=$editor crontab -u root -e ;;
+	sudo EDITOR=$editor crontab -u root -e ;;
 	     
         0) 
         exit 0 ;;
