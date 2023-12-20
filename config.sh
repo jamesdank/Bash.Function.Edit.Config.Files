@@ -24,8 +24,9 @@ function config () {
     $(color_green '1)') ~./bashrc
     $(color_green '2)') /etc/fstab
     $(color_green '3)') /etc/apt/sources.list
-    $(color_green '4)') crontab
-    $(color_green '5)') crontab root
+    $(color_green '4)') /etc/network/interfaces
+    $(color_green '5)') crontab
+    $(color_green '6)') crontab root
     $(color_green '0)') Exit
     $(color_blue 'Choose an option:') "
         
@@ -42,9 +43,13 @@ function config () {
 	sudo $editor /etc/apt/sources.list ;;
 
         4) 
-	EDITOR=$editor crontab -e ;;
+	sudo $editor /etc/network/interfaces ;;
+
 
         5) 
+	EDITOR=$editor crontab -e ;;
+
+        6) 
 	sudo EDITOR=$editor crontab -u root -e ;;
 	     
         0) 
