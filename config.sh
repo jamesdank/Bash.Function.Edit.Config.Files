@@ -45,7 +45,6 @@ function config () {
         4) 
 	sudo $editor /etc/network/interfaces ;;
 
-
         5) 
 	EDITOR=$editor crontab -e ;;
 
